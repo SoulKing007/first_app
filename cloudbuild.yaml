@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-build/docker'
+  args: ['build','-t','gce.io/natural-caster-445219-j3/first_app', '.']
+- name: 'gcr.io/cloud-build/docker'
+  args: ['push','-t','gce.io/natural-caster-445219-j3/first_app']
